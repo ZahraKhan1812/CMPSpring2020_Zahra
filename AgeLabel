@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class AgeLabel {
+public static void main(String args[]) {
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter an age in number of days: ");
+int d = sc.nextInt();
+  
+double y = d/365.0;
+
+if(y <= 1)
+System.out.print("You are an infant");
+else if(y <= 3)
+System.out.print("You are a toddler");
+else if(y <= 12)
+System.out.print("You are a child");
+else if(y <= 19)
+System.out.print("You are a teenager");
+else if(y <= 21)
+System.out.print("You are a young adult");
+else if(y <= 50)
+System.out.print("You are an adult");
+else if(y <= 65)
+System.out.print("You are middle aged");
+}
+}
